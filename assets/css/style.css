@@ -1,0 +1,616 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #17191B;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+p {
+    color: rgba(255, 255, 255, .7);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1400px;
+}
+
+
+/*-------------------- Scroll Bar css start --------------------*/
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #222426;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0FBFDE;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #0A6979;
+}
+
+html {
+    scrollbar-color: #0FBFDE #222426;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+/*-------------------- Scroll Bar css end --------------------*/
+
+
+/*-------------------- Selection css start --------------------*/
+
+::selection {
+    background-color: #222426;
+    color: #0FBFDE;
+}
+
+::-webkit-selection {
+    background-color: #222426;
+    color: #0FBFDE;
+}
+
+::-moz-selection {
+    background-color: #222426;
+    color: #0FBFDE;
+}
+
+::-ms-selection {
+    background-color: #222426;
+    color: #0FBFDE;
+}
+
+::-o-selection {
+    background-color: #222426;
+    color: #0FBFDE;
+}
+
+/*-------------------- Selection css end --------------------*/
+
+
+/*-------------------- Offcanvas area css start --------------------*/
+
+.menu-close {
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    cursor: pointer;
+    transition: .4s;
+    border: 1px solid #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-close:hover {
+    color: #000;
+    background: #fff;
+}
+
+.offcanvas-area {
+    position: fixed;
+    left: -100%;
+    height: 100%;
+    width: 318px;
+    background: #262846;
+    z-index: 6;
+    padding-top: 35px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    visibility: hidden;
+    top: 0;
+}
+
+.offcanvas-area.active {
+    left: 0;
+    visibility: visible;
+}
+
+.offcanvas-area .main-menu ul li a {
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: .3s;
+    padding: 16px 22px;
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+}
+
+.offcanvas-area .main-menu ul li:first-child a {
+    border-top: 1px solid #fff;
+}
+
+.offcanvas-area .main-menu ul li a:hover,
+.offcanvas-area .main-menu ul li a[aria-expanded="true"] {
+    color: #D5D5D5;
+}
+
+.offcanvas-menu .main-menu ul {
+    display: block;
+    padding-top: 94px;
+    padding-left: 0;
+    margin-bottom: 65px;
+    list-style: none;
+}
+
+.offcanvas-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 5;
+}
+
+.offcanvas-overlay.active {
+    opacity: .4;
+    visibility: visible;
+}
+
+.menu-open {
+    font-size: 27px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+.offcanvas-menu .common-btn {
+    font-size: 17px;
+    padding: 9px 30px;
+    border-radius: 12px;
+}
+
+.offcanvas-btn a {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin: 0 auto
+}
+
+.offcanvas-btn a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/*-------------------- Offcanvas area css end --------------------*/
+
+
+/*-------------------- Header area css start --------------------*/
+
+.header__area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.header__main__blk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo {
+    max-width: 100px;
+}
+
+.header__menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header__menu ul li:first-child {
+    margin-left: 0;
+}
+
+.header__menu ul li a {
+    color: rgba(255, 255, 255, .4);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: .3s;
+    letter-spacing: 1px;
+}
+
+.header__menu ul li a:hover {
+    color: #fff;
+}
+
+.header__menu ul li a.active {
+    color: #fff;
+}
+
+/*-------------------- Header area css end --------------------*/
+
+
+/*-------------------- Hero area css start --------------------*/
+
+.hero__area {
+    background-color: #182028;
+}
+
+.hero__wrap {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 135px;
+    padding-top: 220px;
+}
+
+.hero__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    max-width: 500px;
+}
+
+.hero__content {
+    max-width: 650px;
+}
+
+.hero__content span {
+    color: #0FBFDE;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hero__content h1 {
+    font-size: 90px;
+    margin-bottom: 2px;
+}
+
+.hero__content h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 25px;
+}
+
+.hero__content p {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 45px;
+}
+
+.common__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 52px;
+    background-color: #0FBFDE;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.common__btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.hero__widgets {
+    display: flex;
+    align-items: center;
+}
+
+.hero__btn {
+    flex: 0 0 auto;
+}
+
+.hero__socials {
+    flex: 0 0 auto;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__socials a {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #fff;
+    transition: .3s;
+}
+
+.hero__socials a:hover {
+    color: #0FBFDE;
+}
+
+.hero__socials a:last-child {
+    margin-right: 0;
+}
+
+.hero__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 65px;
+    transform: translateX(-50%);
+    z-index: 3;
+    animation: scroll 2s infinite ease-in-out;
+}
+
+.hero__scroll a {
+    color: rgba(255, 255, 255, .5);
+    font-size: 35px;
+    transition: .3s;
+
+}
+
+@keyframes scroll {
+    0% {
+        bottom: 65px;
+    }
+
+    50% {
+        bottom: 50px;
+    }
+
+    100% {
+        bottom: 65px;
+    }
+}
+
+.hero__sp1 {
+    position: absolute;
+    left: 34%;
+    top: 32%;
+    z-index: -1;
+    max-width: 180px;
+}
+
+.hero__sp2 {
+    position: absolute;
+    left: 31%;
+    bottom: 11%;
+    z-index: -1;
+    max-width: 180px;
+}
+
+/*-------------------- Hero area css end --------------------*/
+
+
+/*-------------------- Service area css start --------------------*/
+
+.service__area {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.common__topbar {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.common__topbar span {
+    color: #0FBFDE;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.common__topbar h2 {
+    margin-bottom: 0;
+}
+
+.service__main__blk {
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.service__ico img {
+    height: 100px;
+    width: auto;
+}
+
+.service__ico {
+    margin-bottom: 25px;
+}
+
+.service__content h4 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.service__content p {
+    margin-bottom: 0;
+}
+
+.service__area .container {
+    max-width: 1100px;
+}
+
+.service__main__blk.service__shadow {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/*-------------------- Service area css end --------------------*/
+
+
+/*-------------------- Banner area css start --------------------*/
+
+.banner__area .container-fluid {
+    padding: 0;
+}
+
+.banner__img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/*-------------------- Banner area css end --------------------*/
+
+
+/*-------------------- Default area css start --------------------*/
+/*-------------------- Default area css end --------------------*/
+
+
+/*-------------------- Footer area css start --------------------*/
+
+.footer__area {
+    background-color: #182028;
+    padding-top: 70px;
+    padding-bottom: 26px;
+}
+
+.footer__main__blk {
+    text-align: center;
+}
+
+.footer__logo {
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+.footer__menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__menu ul li {
+    display: inline-block;
+    margin: 0px 14px;
+}
+
+.footer__menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .3s;
+    text-transform: capitalize;
+}
+
+.footer__menu ul li a:hover {
+    color: #0FBFDE;
+}
+
+.footer__menu {
+    margin-bottom: 30px;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.footer__socials a {
+    color: rgba(255, 255, 255, 1);
+    margin: 0px 10px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.footer__socials a:hover {
+    color: #0FBFDE;
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright span {
+    color: rgba(255, 255, 255, .5);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*-------------------- Footer area css end --------------------*/
