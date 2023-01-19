@@ -535,6 +535,199 @@ html {
 /*-------------------- Banner area css end --------------------*/
 
 
+/*-------------------- About area css start --------------------*/
+
+.about__area {
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.about__topbar {
+    text-align: left;
+}
+
+.about__topbar p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.about__single__topbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.about__single__topbar span {
+    flex: 0 0 auto;
+    width: 70px;
+    height: 70px;
+    background-color: #0FBFDE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 34px;
+    margin-right: 20px;
+}
+
+.about__single__topbar h4 {
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.about__area .g-5,
+.about__area .gx-5 {
+    --bs-gutter-x: 7rem;
+}
+
+.about__single__blk p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.about__right__blk {
+    padding-top: 36px;
+}
+
+/*-------------------- About area css end --------------------*/
+
+
+/*-------------------- Work area css start --------------------*/
+
+.work__area {
+    padding-bottom: 90px;
+}
+
+.work__single__blk {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.work__single__blk:last-child {
+    margin-bottom: 0;
+}
+
+.work__step {
+    flex: 0 0 auto;
+    width: 180px;
+}
+
+.work__step span {
+    color: #0FBFDE;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 140px;
+}
+
+.work__content h4 {
+    font-size: 28px;
+}
+
+.work__content p {
+    margin-bottom: 0;
+}
+
+.work__step.step__one span {
+    opacity: .2;
+}
+
+.work__step.step__two span {
+    opacity: .5;
+}
+
+.work__img__blk {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.work__img__blk img {
+    width: 100%;
+}
+
+/*-------------------- Work area css end --------------------*/
+
+
+/*-------------------- Testimonial area css start --------------------*/
+
+.testimonial__area {
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.testimonial__single__slide {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: #182028;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.testimonial__area .container {
+    max-width: 1100px;
+}
+
+.testimonial__single__slide h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.testimonial__single__slide ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.testimonial__single__slide ul li {
+    display: inline-block;
+    color: #ffbf00;
+    font-size: 14px;
+}
+
+.testimonial__single__slide p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.testimonial__single__slide::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+    content: "";
+    background-color: #0FBFDE;
+    border-radius: 0px 0px 0px 80px;
+}
+
+.testimonial__main__slider .owl-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #212d39 !important;
+    transition: .3s;
+    margin: 0px 4px;
+}
+
+.testimonial__main__slider .owl-dots button.active {
+    background-color: #0FBFDE !important;
+}
+
+.testimonial__main__slider .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*-------------------- Testimonial area css end --------------------*/
+
+
 /*-------------------- Default area css start --------------------*/
 /*-------------------- Default area css end --------------------*/
 

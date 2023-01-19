@@ -19,11 +19,11 @@
         });
 
 
-        //------------ Hero slider -------------
+        //------------ Testimonial slider -------------
 
-        $('.hero__area_slider').owlCarousel({
+        $('.testimonial__main__slider').owlCarousel({
             loop: true,
-            margin: 0,
+            margin: 30,
             nav: false,
             dot: true,
             responsive: {
@@ -31,32 +31,17 @@
                     items: 1
                 },
                 600: {
-                    items: 1
+                    items: 2
                 },
                 1000: {
-                    items: 1
+                    items: 3
                 }
             }
         })
 
 
-        //---owl dots number-----
-        
-        var i = 1;
-        
-        $('.hero-slier-main.owl-carousel .owl-dot').each(function () {
-            $(this).text(i);
-            i++;
-        });
-
-
-
 
 
     }); //---document-ready-----
-
-
-
-
 
 }(jQuery));
