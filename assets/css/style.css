@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #17191B;
+    background-color: #11181E;
 }
 
 .alignleft {
@@ -262,7 +262,7 @@ html {
 
 .header__main__blk {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     width: 100%;
 }
@@ -301,6 +301,30 @@ html {
 
 .header__menu ul li a.active {
     color: #fff;
+}
+
+.header__left__blk {
+    display: flex;
+    align-items: end;
+    gap: 60px;
+}
+
+.header__right__blk {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header__right__blk a {
+    color: rgba(255, 255, 255, .4);
+    font-size: 14px;
+    font-weight: 400;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.header__right__blk a:hover {
+    color: rgba(255, 255, 255, 1);
 }
 
 /*-------------------- Header area css end --------------------*/
@@ -520,25 +544,10 @@ html {
 /*-------------------- Service area css end --------------------*/
 
 
-/*-------------------- Banner area css start --------------------*/
-
-.banner__area .container-fluid {
-    padding: 0;
-}
-
-.banner__img img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-}
-
-/*-------------------- Banner area css end --------------------*/
-
-
 /*-------------------- About area css start --------------------*/
 
 .about__area {
-    padding-top: 120px;
+    padding-top: 50px;
     padding-bottom: 90px;
 }
 
@@ -768,6 +777,14 @@ html {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
+}
+
+.contact__single__blk input:focus {
+    border: 1px solid #0FBFDE;
+}
+
+.contact__single__blk textarea:focus {
+    border: 1px solid #0FBFDE;
 }
 
 .contact__single__blk textarea {
