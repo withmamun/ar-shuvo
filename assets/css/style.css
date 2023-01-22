@@ -135,8 +135,9 @@ html {
 }
 
 .menu-close:hover {
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #0FBFDE;
+    border-color: #0FBFDE;
 }
 
 .offcanvas-area {
@@ -144,13 +145,15 @@ html {
     left: -100%;
     height: 100%;
     width: 318px;
-    background: #262846;
-    z-index: 6;
+    background: #16293c;
+    z-index: 9;
     padding-top: 35px;
     -webkit-transition: .4s;
     transition: .4s;
     visibility: hidden;
     top: 0;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 .offcanvas-area.active {
@@ -174,7 +177,8 @@ html {
 
 .offcanvas-area .main-menu ul li a:hover,
 .offcanvas-area .main-menu ul li a[aria-expanded="true"] {
-    color: #D5D5D5;
+    color: #0FBFDE;
+    padding-left: 28px;
 }
 
 .offcanvas-menu .main-menu ul {
@@ -194,7 +198,7 @@ html {
     visibility: hidden;
     -webkit-transition: .4s;
     transition: .4s;
-    z-index: 5;
+    z-index: 8;
 }
 
 .offcanvas-overlay.active {
@@ -203,46 +207,18 @@ html {
 }
 
 .menu-open {
-    font-size: 27px;
+    font-size: 22px;
     color: #fff;
     cursor: pointer;
     position: relative;
-    top: 2px;
-    margin-left: 20px;
-    margin-right: 8px;
-}
-
-.offcanvas-menu .common-btn {
-    font-size: 17px;
-    padding: 9px 30px;
-    border-radius: 12px;
-}
-
-.offcanvas-btn a {
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 15px;
-    width: 200px;
-    height: 60px;
-    text-decoration: none;
+    top: 0;
     transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin: 0 auto
+    display: none;
 }
 
-.offcanvas-btn a:hover {
-    background-color: #fff;
-    color: #000;
+.menu-open:hover {
+    color: #0FBFDE;
 }
-
 
 /*-------------------- Offcanvas area css end --------------------*/
 
