@@ -12,7 +12,7 @@
             $('.offcanvas-area , .offcanvas-overlay').addClass('active');
 
         });
-        $('.menu-close , .offcanvas-overlay').click(function () {
+        $('.menu-close , .offcanvas-overlay, .offcanvas-area .main-menu ul li a').click(function () {
 
             $('.offcanvas-area , .offcanvas-overlay').removeClass('active');
 
@@ -26,11 +26,14 @@
             margin: 30,
             nav: false,
             dot: true,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true,
             responsive: {
                 0: {
                     items: 1
                 },
-                600: {
+                768: {
                     items: 2
                 },
                 1000: {

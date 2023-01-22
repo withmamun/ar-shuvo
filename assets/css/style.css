@@ -183,9 +183,9 @@ html {
 
 .offcanvas-menu .main-menu ul {
     display: block;
-    padding-top: 94px;
+    padding-top: 25px;
     padding-left: 0;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
     list-style: none;
 }
 
@@ -219,6 +219,21 @@ html {
 .menu-open:hover {
     color: #0FBFDE;
 }
+
+.offcanvas__contact {
+    padding-top: 65px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.offcanvas__contact a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 8px;
+}
+
 
 /*-------------------- Offcanvas area css end --------------------*/
 
@@ -276,6 +291,10 @@ html {
 }
 
 .header__menu ul li a.active {
+    color: #fff;
+}
+
+.header__menu ul li.active a {
     color: #fff;
 }
 
