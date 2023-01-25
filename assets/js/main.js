@@ -25,7 +25,7 @@
                 contactMessage.textContent = 'Write all the input fields 📩'
             } else {
                 // serviceID - templateID - #form - publicKey
-                emailjs.sendForm('service_pi06ngc', 'template_v6k4yqn', '#contact-form', 'kQvgZRHdWgo5ybJBA')
+                emailjs.sendForm('service_z3cc5em', 'template_ytgufci', '#contact-form', 'go8BbCeivMef8I42I')
                     .then(() => {
                         // Show message and add color
                         contactMessage.classList.add('color-green')
